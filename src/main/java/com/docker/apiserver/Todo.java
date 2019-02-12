@@ -22,6 +22,11 @@ public class Todo {
     }
 
     @Override
+    public String toString() {
+        return "{" + "\"" + "title" + "\"" + ":" + "\"" + this.title + "\"" + "}";
+    }
+
+    @Override
     public int hashCode() {
 
         return Objects.hash(title);

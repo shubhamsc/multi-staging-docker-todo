@@ -2,9 +2,7 @@ FROM gradle:jre-alpine as packagingstage
 
 WORKDIR /app
 
-COPY . .
-
-EXPOSE 8080
+COPY ./src build.gradle  ./
 
 CMD ["gradle", "clean","build"]
 
